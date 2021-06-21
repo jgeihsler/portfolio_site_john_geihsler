@@ -1,0 +1,105 @@
+/* colors used:
+jet black:(txt) rgba(0, 0, 0, 1.0); #000000
+bright pink: rgba(250, 37, 94, 1.0); #fa2558
+grey:(bg) rgba(158, 153, 153, 1.0); #c4bebe
+light pink: rgba(248, 229, 229, 1.0); #f8e5e5 */
+body {
+  background-color: rgba(158, 153, 153, 1.0);
+}
+
+body {
+  font-family: 'Lusitana'serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: black: rgba(0, 0, 0, 1.0);
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: black: rgba(0, 0, 0, 1, 0);
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #f8e5e5;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fa255e;
+}
+
+a:hover {
+  color: #fa255e;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #fa255e;
+}
+
+a:hover,
+a:focus {
+  color: #fa255e;
+  text-decoration: underline;
+}
+
+.button {
+  display: inline-block;
+  background-color: rgba(248, 229, 229, 1.0);
+  color: #000000;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #000000;
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: rgba(248, 229, 229, 1.0);
+  text-transform: uppercase;
+  border: 2px solid rgba(248, 229, 229, 1.0);
+}
+
+.button.contact:hover {
+  background-color: rgba(248, 229, 229, 1.0);
+  color: #000000;
+}
+
+.button.about {
+  background-color: rgba(248, 229, 229, 1.0);
+  color: #000000;
+}
