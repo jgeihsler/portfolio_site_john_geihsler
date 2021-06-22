@@ -3,6 +3,10 @@ jet black:(txt) rgba(0, 0, 0, 1.0); #000000
 bright pink: rgba(250, 37, 94, 1.0); #fa2558
 grey:(bg) rgba(158, 153, 153, 1.0); #c4bebe
 light pink: rgba(248, 229, 229, 1.0); #f8e5e5 */
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgba(158, 153, 153, 1.0);
 }
@@ -102,4 +106,157 @@ a:focus {
 .button.about {
   background-color: rgba(248, 229, 229, 1.0);
   color: #000000;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+#hero h1 {
+  text-align: center;
+}
+
+#hero p {
+  text-align: center;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+header {
+  background-color: rgba(158, 153, 153, 1.0);
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+  position: fixed;
+  width: 100%;
+}
+
+main {
+  padding-top: 300px;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(248, 229, 229, 1.0);
+}
+
+nav>ul>li>a:visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fa255e;
+}
+
+#hero {
+  background-color: rgba(158, 153, 153, 1.0);
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#work {
+  background-color: rgba(158, 153, 153, 1.0);
+  padding: 20px;
+  display: inline-block;
+  width: 100%;
+}
+
+#work h2 {
+  text-align: center;
+}
+
+#contact {
+  text-align: center;
+  background-color: rgba(158, 153, 153, 1.0);
+  padding: 20px;
+  display: inline-block;
+}
+
+.socials {
+  padding: 20px;
+  max-height: 100px;
+  max-width: 100px;
+}
+
+.socials {
+  display: inline-block;
+}
+
+#about {
+  background-color: rgba(158, 153, 153, 1.0);
+  padding: 20px;
+  display: inline-block;
+  width: 100%;
+}
+
+#about h1 {
+  text-align: center;
+}
+
+.self {
+  padding: 20px;
+  max-height: 400px;
+  max-width: 300px;
+}
+
+.self {
+  position: static;
+}
+
+#about h2 {
+  text-align: center;
+}
+
+#self-picture {
+  text-align: center;
+}
+
+#story p {
+  text-align: left;
+}
+
+#skills h3 {
+  text-align: left;
+}
+
+#skills li {
+  text-align: left;
+}
+
+#tools h3 {
+  text-align: left;
+}
+
+#tools li {
+  text-align: left;
+}
+
+#melomanie {
+  background-color: rgba(158, 153, 153, 1.0);
+  padding: 50px;
+  display: inline-block;
+  width: 100%;
 }
