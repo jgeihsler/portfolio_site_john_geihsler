@@ -74,21 +74,20 @@ a:focus {
   color: #fa255e;
   text-decoration: underline;
 }
-
 .button {
   display: inline-block;
   background-color: rgba(248, 229, 229, 1.0);
   color: #000000;
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #000000;
-  transition: 0.2s opacity;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
-
 .button:hover {
   opacity: 0.8;
-  text-decoration: none;
 }
 
 .button.contact {
@@ -259,4 +258,110 @@ nav>ul>li>a:visited {
   padding: 50px;
   display: inline-block;
   width: 100%;
+}
+
+#libation_library {
+  background-color: rgba(158, 153, 153, 1.0);
+  padding: 50px;
+  display: inline-block;
+  width: 100%;
+}
+
+#mindful {
+  background-color: rgba(158, 153, 153, 1.0);
+  padding: 50px;
+  display: inline-block;
+  width: 100%;
+}
+
+#gentlemens_aesthetic {
+  background-color: rgba(158, 153, 153, 1.0);
+  padding: 50px;
+  display: inline-block;
+  width: 100%;
+}
+
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  .col-md-6 {
+  width: 50%;
+  }
+  [class*="col-"] {
+  float: left;
+  padding: 10px;
+  }
+  .row::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
+  #about-page h3 { margin-top: 0;}
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  [class*="col-"] {
+  float: left;
+  padding: 10px;
+  }
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .row::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
+  #about-page h3 { margin-top: 0;}
+  }
+
+  @keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
