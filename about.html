@@ -22,8 +22,9 @@
     <div>
       <picture>
         <source srcset="img/logo/geihsler_john_logo_1x.png" media="(max-width:767px)">
-        <img src="img/logo/geihsler_john_logo_2x.png" alt="John's Logo">
+        <img class="logo" src="img/logo/geihsler_john_logo_2x.png" alt="John's Logo">
       </picture>
+
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
@@ -36,27 +37,31 @@
 
   <main>
 
-    <div>
-      <div>
+    <div id="about">
+      <div class="container">
         <h1>About</h1>
       </div>
     </div>
 
-    <div>
-      <div>
+    <div id="self-picture">
+      <div class="container">
         <picture>
           <source srcset="img/personal_photo/geihsler_john_photo_1x.png" media="(max-width:767px)">
-          <img src="img/personal_photo/geihsler_john_photo_2x.png" alt="John Geihsler">
+          <img class="self" src="img/personal_photo/geihsler_john_photo_2x.png" alt="John Geihsler">
         </picture>
-        <div>
-          <div>
+
+        <div id="story">
+          <div class="container">
             <h2>My Story</h2>
             <p>Hi, I’m John! I’m a UI designer based in Chicago, IL and have a background in graphic design and illustration. I have spent the last several years working freelance for local charities, galleries, and businesses to support their
               branding and marketing needs. While working for these companies I found that I wanted to grow my skills and love for design to be able to provide a wider range of skills that would encompass mobile and web applications. </p>
             <p>Through my education I have become proficient in Adobe products as well as Sketch and Figma to produce both mobile and web applications. With a base knowledge of coding in CSS, HTML, and JavaScript. </p>
             <a href="files/geihsler_john_resume_2021.pdf" class="button about">My Resume</a>
           </div>
-          <div>
+        </div>
+
+        <div id="skills">
+          <div class="container">
             <h2>Skills & Tools</h2>
             <div>
               <h3>Relevant Skills</h3>
@@ -72,35 +77,40 @@
                 <li>Personas</li>
               </ul>
             </div>
-            <div>
-              <h3>Tools I Use</h3>
-              <ul>
-                <li>Sketch</li>
-                <li>Figma</li>
-                <li>Craft</li>
-                <li>Proto.io</li>
-                <li>Invision</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Behance</li>
-              </ul>
-            </div>
+          </div>
+        </div>
+
+        <div id="tools">
+          <div class="container">
+            <h3>Tools I Use</h3>
+            <ul>
+              <li>Sketch</li>
+              <li>Figma</li>
+              <li>Craft</li>
+              <li>Proto.io</li>
+              <li>Invision</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Behance</li>
+            </ul>
+          </div>
+        </div>
 
   </main>
 
   <footer id="contact">
-    <div>
+    <div class="container">
       <h2>Get in Touch</h2>
-      <p>Do you like my work and want to discuss opportunities? Please get in touch. Call: <a href="tel:+1(630)824-7797">+1 (630)824-7797</a>. Prefer sending an email?</p>
+      <p>Do you like my work and want to discuss opportunities? Please get in touch. Call: <a href="tel:+1(630)824-7797">+1 (630)824-7797</a>.<br> Prefer sending an email?</p>
     </div>
     <div>
       <a href="mailto:j.geihsler2522@gmail.com" class="button contact">Email Me</a>
     </div>
     <div>
-      <!--Social Media Layout and Placeholders-->
+
       <a href="https://www.linkedin.com/in/john-michael-geihsler/" target="_blank">
-        <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+        <svg class="socials" height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
           xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
           <g id="g5891">
             <path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;" />
@@ -116,7 +126,7 @@
         </svg>
       </a>
       <a href="https://www.instagram.com/jmgeihsler_art/" target="_blank">
-        <svg id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <svg class="socials" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <style type="text/css">
             .st0 {
               fill: url(#SVGID_1_);
@@ -148,8 +158,8 @@
         </svg>
       </a>
       <a href="https://www.behance.net/jmgeihsler" target="_blank">
-        <svg height="6.82666in" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 6.82666 6.82666" width="6.82666in" xml:space="preserve"
-          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <svg class="socials" height="6.82666in" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 6.82666 6.82666" width="6.82666in"
+          xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <defs>
             <style type="text/css">
               <![CDATA[
