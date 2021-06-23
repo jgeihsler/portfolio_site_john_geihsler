@@ -16,7 +16,7 @@ body {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
-  color: black: rgba(0, 0, 0, 1.0);
+  color: rgba(0, 0, 0, 1.0);
 }
 
 h1, h2, h3, h4 {
@@ -24,7 +24,7 @@ h1, h2, h3, h4 {
   font-size: 44px;
   font-weight: 600;
   line-height: 1.4;
-  color: black: rgba(0, 0, 0, 1, 0);
+  color: rgba(0, 0, 0, 1, 0);
 }
 
 h1 {
@@ -116,7 +116,7 @@ a:focus {
   margin: 25px 0;
 }
 
-#work .row {
+#projects .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
 }
@@ -176,14 +176,14 @@ nav>ul>li>a:visited {
   width: 100%;
 }
 
-#work {
+#projects {
   background-color: rgba(158, 153, 153, 1.0);
   padding: 20px;
   display: inline-block;
   width: 100%;
 }
 
-#work h2 {
+#projects h2 {
   text-align: center;
 }
 
