@@ -12,7 +12,7 @@ body {
 }
 
 body {
-  font-family: 'Lusitana'serif;
+  font-family: 'Lusitana', serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
@@ -107,7 +107,6 @@ a:focus {
   color: #000000;
 }
 
-/* Layout styling */
 .container {
   padding: 0 15px;
 }
@@ -130,7 +129,7 @@ a:focus {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 50px;
 }
 
 header {
@@ -143,7 +142,7 @@ header {
 }
 
 main {
-  padding-top: 300px;
+  padding-top: 100px;
 }
 
 nav>ul {
@@ -191,7 +190,7 @@ nav>ul>li>a:visited {
   text-align: center;
   background-color: rgba(158, 153, 153, 1.0);
   padding: 20px;
-  display: inline-block;
+  display: block;
 }
 
 .socials {
@@ -281,6 +280,16 @@ nav>ul>li>a:visited {
   width: 100%;
 }
 
+[class*="col-"] {
+float: left;
+padding: 10px;
+}
+.row::after {
+content: "";
+clear: both;
+display: table;
+}
+
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
@@ -294,15 +303,7 @@ nav>ul>li>a:visited {
   .col-md-6 {
   width: 50%;
   }
-  [class*="col-"] {
-  float: left;
-  padding: 10px;
-  }
-  .row::after {
-  content: "";
-  clear: both;
-  display: table;
-  }
+
   #about-page h3 { margin-top: 0;}
 }
 
