@@ -143,26 +143,52 @@ header {
 }
 
 main {
-  padding-top: 100px;
+  padding-top: 56px;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
 }
 
 .navtoggle li:not(:last-child) {
   display: none;
 }
+
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
+
 .navtoggle li .icon {
   position: absolute;
+  padding-top: 8px;
   padding-right: 0;
   right: 0;
   top: 2px;
   font-size: 20px;
+}
+
+.navtoggle.responsive li {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(248, 229, 229, 1.0);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
 nav>ul>li>a {
@@ -216,7 +242,7 @@ nav>ul>li>a:visited {
 
 #about {
   background-color: rgba(158, 153, 153, 1.0);
-  padding: 20px;
+  padding: 10px;
   display: inline-block;
   width: 100%;
 }
@@ -304,14 +330,24 @@ nav>ul>li>a:visited {
 
 @media only screen and (min-width: 640px) {
   header {
-    nav>ul>li {
-      display: inline-block;
-    }
-    .navtoggle li:not(:last-child) {
-      display: inline-block;
-    }
     text-align: unset;
     padding: 20px 0 13px;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   nav {
@@ -369,50 +405,4 @@ nav>ul>li>a:visited {
   #about-page h3 {
     margin-top: 0;
   }
-}
-
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
 }
