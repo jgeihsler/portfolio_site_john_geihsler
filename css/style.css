@@ -227,7 +227,7 @@ nav>ul>li>a:visited {
   text-align: center;
   background-color: rgba(158, 153, 153, 1.0);
   padding: 20px;
-  display: block;
+  display: inline-block;
 }
 
 .socials {
@@ -360,6 +360,12 @@ nav>ul>li>a:visited {
     width: 50%;
   }
 
+  #contact {
+    text-align: center;
+    background-color: rgba(158, 153, 153, 1.0);
+    padding: 20px;
+    display: block;
+  }
   #about-page h3 {
     margin-top: 0;
   }
