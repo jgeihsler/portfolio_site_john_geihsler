@@ -273,19 +273,11 @@ nav>ul>li>a:visited {
   text-align: left;
 }
 
-#skills h3 {
+#skills-and-tools h3 {
   text-align: left;
 }
 
-#skills li {
-  text-align: left;
-}
-
-#tools h3 {
-  text-align: left;
-}
-
-#tools li {
+#skills-and-tools li {
   text-align: left;
 }
 
